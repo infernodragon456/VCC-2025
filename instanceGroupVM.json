@@ -1,0 +1,142 @@
+{
+  "canIpForward": false,
+  "confidentialInstanceConfig": {
+    "enableConfidentialCompute": false
+  },
+  "cpuPlatform": "Intel Broadwell",
+  "creationTimestamp": "2025-03-01T11:11:30.067-08:00",
+  "deletionProtection": false,
+  "description": "",
+  "disks": [
+    {
+      "architecture": "X86_64",
+      "guestOsFeatures": [
+        {
+          "type": "UEFI_COMPATIBLE"
+        },
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        },
+        {
+          "type": "GVNIC"
+        },
+        {
+          "type": "SEV_CAPABLE"
+        },
+        {
+          "type": "SEV_LIVE_MIGRATABLE_V2"
+        }
+      ],
+      "type": "PERSISTENT",
+      "licenses": ["projects/debian-cloud/global/licenses/debian-12-bookworm"],
+      "deviceName": "instance-template-20250301-190414",
+      "autoDelete": true,
+      "source": "projects/dummy-project-id/zones/us-central1-f/disks/vcc-ass2-instancegroup-n0jr",
+      "index": 0,
+      "boot": true,
+      "kind": "compute#attachedDisk",
+      "mode": "READ_WRITE",
+      "interface": "SCSI",
+      "diskSizeGb": "10"
+    }
+  ],
+  "displayDevice": {
+    "enableDisplay": false
+  },
+  "fingerprint": "REDACTED",
+  "id": "REDACTED",
+  "keyRevocationActionType": "NONE",
+  "kind": "compute#instance",
+  "labelFingerprint": "REDACTED",
+  "lastStartTimestamp": "2025-03-01T11:11:40.291-08:00",
+  "machineType": "projects/dummy-project-id/zones/us-central1-f/machineTypes/e2-medium",
+  "metadata": {
+    "fingerprint": "REDACTED",
+    "kind": "compute#metadata",
+    "items": [
+      {
+        "value": "projects/dummy-project-number/regions/us-central1/instanceTemplates/instance-template-20250301-190414",
+        "key": "instance-template"
+      },
+      {
+        "value": "projects/dummy-project-number/regions/us-central1/instanceGroupManagers/vcc-ass2-instancegroup",
+        "key": "created-by"
+      },
+      {
+        "value": "REDACTED-SSH-KEYS",
+        "key": "ssh-keys"
+      }
+    ]
+  },
+  "name": "vcc-ass2-instancegroup-n0jr",
+  "networkInterfaces": [
+    {
+      "stackType": "IPV4_ONLY",
+      "name": "nic0",
+      "network": "projects/dummy-project-id/global/networks/default",
+      "accessConfigs": [
+        {
+          "name": "External NAT",
+          "type": "ONE_TO_ONE_NAT",
+          "natIP": "REDACTED-IP",
+          "kind": "compute#accessConfig",
+          "networkTier": "PREMIUM"
+        }
+      ],
+      "subnetwork": "projects/dummy-project-id/regions/us-central1/subnetworks/default",
+      "networkIP": "REDACTED-INTERNAL-IP",
+      "fingerprint": "REDACTED",
+      "kind": "compute#networkInterface"
+    }
+  ],
+  "reservationAffinity": {
+    "consumeReservationType": "ANY_RESERVATION"
+  },
+  "resourceStatus": {
+    "scheduling": {}
+  },
+  "satisfiesPzi": false,
+  "scheduling": {
+    "onHostMaintenance": "MIGRATE",
+    "provisioningModel": "STANDARD",
+    "automaticRestart": true,
+    "preemptible": false
+  },
+  "selfLink": "projects/dummy-project-id/zones/us-central1-f/instances/vcc-ass2-instancegroup-n0jr",
+  "serviceAccounts": [
+    {
+      "email": "dummy-project-number-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ],
+  "shieldedInstanceConfig": {
+    "enableSecureBoot": false,
+    "enableVtpm": true,
+    "enableIntegrityMonitoring": true
+  },
+  "shieldedInstanceIntegrityPolicy": {
+    "updateAutoLearnPolicy": true
+  },
+  "shieldedVmConfig": {
+    "enableSecureBoot": false,
+    "enableVtpm": true,
+    "enableIntegrityMonitoring": true
+  },
+  "shieldedVmIntegrityPolicy": {
+    "updateAutoLearnPolicy": true
+  },
+  "startRestricted": false,
+  "status": "RUNNING",
+  "tags": {
+    "items": ["http-server", "https-server"],
+    "fingerprint": "REDACTED"
+  },
+  "zone": "projects/dummy-project-id/zones/us-central1-f"
+}
