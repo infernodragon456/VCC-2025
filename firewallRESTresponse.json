@@ -1,0 +1,39 @@
+{
+  "creationTimestamp": "2025-03-01T11:43:36.967-08:00",
+  "denied": [
+    {
+      "IPProtocol": "all"
+    }
+  ],
+  "description": "",
+  "destinationRanges": [
+    "173.194.4.134/31",
+    "173.194.4.136/30",
+    "173.194.4.140/31",
+    "173.194.4.128/25",
+    "173.194.223.0/25",
+    "173.194.5.0/24",
+    "173.194.223.128/26",
+    "142.250.192.0/22",
+    "142.250.77.0/24",
+    "142.250.182.174/32",
+    "142.250.207.0/24",
+    "172.217.167.0/24",
+    "216.58.200.0/24",
+    "216.58.196.0/24",
+    "192.124.249.55"
+  ],
+  "direction": "EGRESS",
+  "disabled": false,
+  "enableLogging": false,
+  "id": "5296973088979606919",
+  "kind": "compute#firewall",
+  "logConfig": {
+    "enable": false
+  },
+  "name": "custom-firewall-rule001",
+  "network": "projects/dummy-project-id/global/networks/default",
+  "priority": 1000,
+  "selfLink": "projects/dummy-project-id/global/firewalls/custom-firewall-rule001",
+  "sourceRanges": ["0.0.0.0/0"]
+}
